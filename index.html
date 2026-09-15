@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b12">
+<title>Rick Grimes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video class="background" autoplay muted loop playsinline>
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
+<div class="shade"></div>
+
+<main>
+  <section class="card">
+    <div class="avatar-box">
+      <img src="assets/avatar.jpg" class="avatar" alt="Rick Grimes">
+      <span class="status"></span>
+    </div>
+
+    <h1>Rick Grimes</h1>
+    <p class="tag">Rick Grimes</p>
+    <p class="bio">Welcome to my profile.</p>
+
+    <div class="links">
+      <a class="link" href="https://www.instagram.com/edeee_33.33/#" target="_blank" rel="noopener">
+        <span class="link-icon">◎</span>
+        <span>Instagram</span>
+        <span class="go">↗</span>
+      </a>
+      <a class="link" href="https://discord.gg/eF7Q35UBrY" target="_blank" rel="noopener">
+        <span class="link-icon">◈</span>
+        <span>Discord</span>
+        <span class="go">↗</span>
+      </a>
+    </div>
+
+    <div class="player">
+      <button id="play" aria-label="Play music">▶</button>
+      <div class="track">
+        <strong>Back to Friends</strong>
+        <span>slowed to perfection — TommyMuzzic</span>
+        <div class="bar"><i id="progress"></i></div>
+      </div>
+      <small id="clock">0:24</small>
+    </div>
+
+    <div class="hint">click the button to play</div>
+  </section>
+</main>
+
+<audio id="audio" preload="metadata">
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
